@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js" integrity="sha256-owX7sroiO/O1a7h3a4X29A1g3QgqdNvijRQ7V5TH45M="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js" integrity="sha256-8E6QUcFg1KTnpEU8TFGhpTGHw5fJqB9vCms3OhAYLqw="
+	 crossorigin="anonymous"></script>
+	<script src="app-browser.js"></script>
+	<style>
+		body {
+			size: 100vw 100vh;
+			overflow: hidden;
+			background-color: steelblue;
+		}
+
+		#ship {
+			position: absolute;
+			z-index: 1000;
+			left: 45%;
+			top: 45%;
+			height: 100px;
+			width: 150px;
+			background-color: saddlebrown;
+		}
+
+		.bullet {
+			width: 25px;
+			height: 25px;
+			z-index: 999;
+			position: absolute;
+			border-radius: 100%;
+			background-color: red;
+		}
+
+		.wall {
+			width: 5px;
+			height: 50px;
+			background-color: whitesmoke;
+			position: absolute;
+			border: 1px solid black;
+			left: 68%;
+			top: 50%;
+		}
+
+		#instructions {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="instructions">Arrow Keys to Move. Space to shoot.</div>
+	<div id="ship"></div>
+</body>
+
+</html>
